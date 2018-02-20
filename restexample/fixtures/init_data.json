@@ -1,0 +1,69 @@
+[
+    {
+      "model": "restexample.category",
+      "pk": 1,
+      "fields": {
+        "name": "Żywność",
+        "type": "e"
+      }
+    },
+    {
+      "model": "restexample.category",
+      "pk": 2,
+      "fields": {
+        "name": "Rozrywka",
+        "type": "e"
+      }
+    },
+    {
+      "model": "restexample.category",
+      "pk": 3,
+      "fields": {
+        "name": "Rachunki",
+        "type": "e"
+      }
+    },
+    {
+      "model": "restexample.category",
+      "pk": 4,
+      "fields": {
+        "name": "Praca",
+        "type": "r"
+      }
+    },
+    {
+      "model": "restexample.category",
+      "pk": 5,
+      "fields": {
+        "name": "Premia",
+        "type": "r"
+      }
+    },
+    {
+      "model": "restexample.plan",
+      "pk": 1,
+      "fields": {
+        "category": 1,
+        "value": 200,
+        "date": "2018-01-02"
+      }
+    },
+    {
+      "model": "restexample.plan",
+      "pk": 2,
+      "fields": {
+        "category": 2,
+        "value": 350,
+        "date": "2018-01-03"
+      }
+    },
+    {
+      "model": "restexample.plan",
+      "pk": 3,
+      "fields": {
+        "category": 3,
+        "value": 600,
+        "date": "2018-01-04"
+      }
+    }
+]

@@ -1,0 +1,155 @@
+PARAMS FOR LISTS:
+    page
+    page_size
+    search
+
+GET /categories
+{
+    page_count,
+    total_count,
+    links: {
+        previous
+        next
+    },
+    results: [
+        {
+            id,
+            name
+        },
+        ...
+    ]
+}
+
+GET /categories/{id}
+{
+    id,
+    name
+}
+
+POST /categories
+{
+    name
+}
+
+PUT /categories/{id}
+{
+    id,
+    name
+}
+
+DELETE /categories/{id}
+
+
+GET /revenues
+{
+    page_count,
+    total_count,
+    links: {
+        previous
+        next
+    },
+    results: [
+        {
+            id,
+            name,
+            value,
+            category: {
+                id,
+                name
+            }
+        },
+        ...
+    ]
+}
+
+GET /revenues/{id}
+{
+    id,
+    name,
+    value,
+    category: {
+        id,
+        name
+    }
+}
+
+POST /revenues
+{
+    name,
+    value,
+    category: {
+        id,
+        name
+    }
+}
+
+PUT /revenues/{id}
+{
+    id,
+    name,
+    value,
+    category: {
+        id,
+        name
+    }
+}
+
+DELETE /revenues/{id}
+
+GET /expenses
+{
+    page_count,
+    total_count,
+    links: {
+        previous
+        next
+    },
+    results: [
+        {
+            id,
+            name,
+            value,
+            category: {
+                id,
+                name
+            }
+        },
+        ...
+    ]
+}
+
+GET /expenses/{id}
+{
+    id,
+    name,
+    value,
+    category: {
+        id,
+        name
+    }
+}
+
+POST /expenses
+{
+    name,
+    value,
+    category: {
+        id,
+        name
+    }
+}
+
+PUT /expenses/{id}
+{
+    id,
+    name,
+    value,
+    category: {
+        id,
+        name
+    }
+}
+
+DELETE /expenses/{id}
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IiIsInVzZXJuYW1lIjoibWFyZWsiLCJleHAiOjE1MTYwNTU5NjYsInVzZXJfaWQiOjEsIm9yaWdfaWF0IjoxNTE2MDUyMzY2fQ.4hJtFYFzsPpCxdeWpXTkWctAeOM5bTsmmdI9GErj6Rg
